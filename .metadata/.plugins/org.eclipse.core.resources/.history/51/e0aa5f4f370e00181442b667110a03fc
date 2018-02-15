@@ -1,0 +1,7 @@
+package com.bridgelabz.bean;
+
+public class Question {
+private int qid;
+private String question;
+private <List>Answer answers;
+}

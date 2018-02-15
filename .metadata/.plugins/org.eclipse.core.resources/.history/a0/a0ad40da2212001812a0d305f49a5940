@@ -1,0 +1,66 @@
+package com.bridgelabz.dao;
+
+import java.sql.ResultSet;
+import java.sql.SQLException;
+import java.util.List;
+
+import javax.sql.DataSource;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.jdbc.core.JdbcTemplate;
+import org.springframework.jdbc.core.RowMapper;
+import org.springframework.stereotype.Repository;
+
+import com.bridgelabz.model.Login;
+import com.bridgelabz.model.User;
+
+@Repository("userDao")
+public class UserDaoImpl implements UserDao {
+	@Autowired
+	DataSource dataSource;
+	@Autowired
+	JdbcTemplate jdbcTemplate;
+
+	public DataSource getDataSource() {
+		return dataSource;
+	}
+
+	public void setDataSource(DataSource dataSource) {
+		this.dataSource = dataSource;
+	}
+
+	public JdbcTemplate getJdbcTemplate() {
+		return jdbcTemplate;
+	}
+
+	public void setJdbcTemplate(JdbcTemplate jdbcTemplate) {
+		this.jdbcTemplate = jdbcTemplate;
+	}
+
+	public void register(User user) // register_persistence
+	{
+		String sql = "insert into User values(?,?,?,?,?,?,?)";
+		jdbcTemplate.update(sql, user.getUsername(), user.getPassword(), user.getFirstname(), user.getLastname(),
+				user.getEmail(), user.getAddress(), user.getPhone());
+	}
+
+	public User ValidatUser(Login login) // login_persisstence
+	{
+		String sql = "select * from User where username'" + login.getUsername() + "'and password='"
+				+ login.getPassword() + "'";
+		List<User> users = jdbcTemplate.query(sql, new UserMapper());
+
+		return null;
+	}
+
+}
+
+class UserMapper implements RowMapper {
+
+	public User mapRow(ResultSet rs, int rowNum) throws SQLException {
+		User user = new User();
+		user.setUsername(rs.getString("username"));
+		return user;
+	}
+
+}

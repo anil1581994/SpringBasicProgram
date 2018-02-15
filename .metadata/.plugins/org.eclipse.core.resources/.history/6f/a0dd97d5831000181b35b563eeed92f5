@@ -1,0 +1,16 @@
+package com.bridgelabz.controller;
+
+import com.bridgelabz.bean.MyBean;
+
+public class HomeController {
+private  MyBean myBean;
+
+public MyBean getMyBean() 
+{
+	return myBean;
+}
+
+public void setMyBean(MyBean myBean) {
+	this.myBean = myBean;
+}
+}

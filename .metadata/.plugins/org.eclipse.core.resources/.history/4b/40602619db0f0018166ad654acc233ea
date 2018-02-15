@@ -1,0 +1,11 @@
+package com.bridgelabz.controller;
+
+import org.springframework.web.servlet.ModelAndView;
+
+public class HelloWorldController {
+  public ModelAndView helloWorld()
+  {
+	  String msg="welcome to Spring first application";
+	  return new ModelAndView("welocomepage","welcomemessage",msg);
+  }
+}

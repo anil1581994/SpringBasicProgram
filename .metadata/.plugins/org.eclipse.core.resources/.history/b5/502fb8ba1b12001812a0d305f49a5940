@@ -1,0 +1,13 @@
+<html>
+<head>
+<title>default page of Application</title>
+</head>
+<body>
+	<table>
+		<tr>
+			<td><a href="login.jsp">login</a></td>
+			<td><a href="register.jsp">register</a></td>
+		</tr>
+	</table>
+</body>
+</html>

@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="MavenProjectWizardArtifactPage">
+		<list key="groupId">
+		</list>
+		<list key="name">
+		</list>
+		<list key="artifactId">
+		</list>
+		<list key="projectNameTemplate">
+			<item value="[artifactId]"/>
+			<item value="[artifactId]-TRUNK"/>
+			<item value="[artifactId]-[version]"/>
+			<item value="[groupId].[artifactId]"/>
+			<item value="[groupId].[artifactId]-[version]"/>
+			<item value="[name]"/>
+		</list>
+		<list key="version">
+			<item value="0.0.1-SNAPSHOT"/>
+		</list>
+	</section>
+	<section name="org.eclipse.m2e.core.pom.dependencies">
+	</section>
+	<section name="org.eclipse.m2e.core.pom.overview">
+		<list key="ciManagementUrl">
+		</list>
+		<list key="ciManagementSystem">
+		</list>
+		<list key="issueManagementSystem">
+		</list>
+		<list key="issueManagementUrl">
+		</list>
+	</section>
+	<section name="org.eclipse.m2e.core.ui.internal.preferences.LocalArchetypeCatalogDialog">
+		<list key="catalogLocation">
+			<item value="/home/bridgeit/Desktop/archetype-catalog-2.2.jar"/>
+		</list>
+	</section>
+	<section name="MavenProjectWizardArchetypePage">
+		<item value="internal" key="catalog"/>
+		<list key="projectNameTemplate">
+			<item value="[artifactId]"/>
+			<item value="[artifactId]-TRUNK"/>
+			<item value="[artifactId]-[version]"/>
+			<item value="[groupId].[artifactId]"/>
+			<item value="[groupId].[artifactId]-[version]"/>
+			<item value="[name]"/>
+		</list>
+	</section>
+	<section name="org.eclipse.m2e.core.ui.internal.wizards.CustomArchetypeDialog">
+	</section>
+	<section name="org.eclipse.m2e.core.ui.internal.preferences.RemoteArchetypeCatalogDialog">
+	</section>
+	<section name="MavenProjectWizardLocationPage">
+		<list key="location">
+			<item value="/home/bridgeit/Documents/AnilSpringWorkSpace/SetterInjectionOfDependentObj"/>
+			<item value="/home/bridgeit/Documents/AnilSpringWorkSpace/Testu"/>
+			<item value="/home/bridgeit/Documents/AnilSpringWorkSpace/SpringWebApp"/>
+			<item value="/home/bridgeit/Documents/AnilSpringWorkSpace/Testme"/>
+			<item value="/home/bridgeit/Documents/AnilSpringWorkSpace/SpringMvcApp1"/>
+			<item value="/home/bridgeit/Documents/AnilSpringWorkSpace/applicationContextContainer"/>
+			<item value="/home/bridgeit/Documents/AnilSpringWorkSpace/SiNonStringMap"/>
+			<item value="/home/bridgeit/Documents/AnilSpringWorkSpace/SetterInjectionOfMap"/>
+			<item value="/home/bridgeit/Documents/AnilSpringWorkSpace/SINonStringCollection"/>
+			<item value="/home/bridgeit/Documents/AnilSpringWorkSpace/SetterInjectionOfCollectionValues"/>
+			<item value="/home/bridgeit/Documents/AnilSpringWorkSpace/SetterInjectionOfPrimitiveString"/>
+			<item value="/home/bridgeit/Documents/AnilSpringWorkSpace/Test"/>
+			<item value="/home/bridgeit/Documents/AnilSpringWorkSpace/ConstructorInjectionApp"/>
+			<item value="/home/bridgeit/Documents/AnilSpringWorkSpace"/>
+			<item value="/home/bridgeit/Documents/AnilSpringWorkSpace/SpringApp3"/>
+		</list>
+		<list key="projectNameTemplate">
+			<item value="[artifactId]"/>
+			<item value="[artifactId]-TRUNK"/>
+			<item value="[artifactId]-[version]"/>
+			<item value="[groupId].[artifactId]"/>
+			<item value="[groupId].[artifactId]-[version]"/>
+			<item value="[name]"/>
+		</list>
+	</section>
+	<section name="Maven2ProjectWizardArchifactPage">
+		<list key="package">
+			<item value="com.bridglabz.MvcLoginRegistration"/>
+			<item value="com.bridglabz"/>
+			<item value="com.bridglabz.LoginRegistrationMvc"/>
+			<item value="com.bridglabz.SpringIocBeanMvcApp"/>
+		</list>
+		<list key="groupId">
+			<item value="com.bridglabz"/>
+		</list>
+		<list key="artifactId">
+			<item value="MvcLoginRegistration"/>
+			<item value="LoginRegistrationMvc"/>
+			<item value="SpringIocBeanMvcApp"/>
+		</list>
+		<list key="projectNameTemplate">
+			<item value="[artifactId]"/>
+			<item value="[artifactId]-TRUNK"/>
+			<item value="[artifactId]-[version]"/>
+			<item value="[groupId].[artifactId]"/>
+			<item value="[groupId].[artifactId]-[version]"/>
+			<item value="[name]"/>
+		</list>
+		<list key="version">
+			<item value="0.0.1-SNAPSHOT"/>
+		</list>
+	</section>
+</section>

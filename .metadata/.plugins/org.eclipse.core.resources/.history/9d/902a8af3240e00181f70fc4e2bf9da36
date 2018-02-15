@@ -1,0 +1,5 @@
+package com.bridgelabz.bean;
+
+public class Employee {
+
+}

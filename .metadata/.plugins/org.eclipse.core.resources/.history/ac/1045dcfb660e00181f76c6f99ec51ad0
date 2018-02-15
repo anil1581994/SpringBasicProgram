@@ -1,0 +1,18 @@
+package com.bridgelabz.bean;
+
+public class User {
+private int userId;
+private String userName;
+private String email;
+public User() {}
+public User(int userId, String userName, String email) {
+	super();
+	this.userId = userId;
+	this.userName = userName;
+	this.email = email;
+}
+public String toString()
+{
+	return "userId:"+userId+"userName"+userName+"email"+email;
+ }
+}

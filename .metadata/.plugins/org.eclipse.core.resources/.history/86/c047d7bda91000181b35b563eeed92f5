@@ -1,0 +1,17 @@
+package com.bridgelabz.bean;
+
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.support.ClassPathXmlApplicationContext;
+
+public class Test {
+public static void main(String[] args) {
+	ApplicationContext context=new ClassPathXmlApplicationContext("SpringJbdcApp1/resource/ApplicationContext.xml");
+	EmployeeDao empDao=(EmployeeDao)context.getBean("empDao");
+	Employee e=new Employee();
+	e.setName("anil");
+	e.setId(23);
+	e.setSalary(5000);
+	int status=empDao.saveEmployee(e);  
+    System.out.println(status);  
+}
+}

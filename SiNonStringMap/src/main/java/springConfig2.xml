@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:context="http://www.springframework.org/schema/context"
+	xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+        http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd">
+
+
+	 <bean id="answer1" class="com.bridgelabz.bean.Answer">
+		<property name="answerId" value="1"></property>
+		<property name="answer" value="Java is a Programming Language"></property>
+		<property name="postDate" value="11/02/2018"></property>
+	</bean>
+	<bean id="answer2" class="com.bridgelabz.bean.Answer">
+		<property name="answerId" value="2"></property>
+		<property name="answer" value="Java is a Platform"></property>
+		<property name="postDate" value="10/12/2018"></property>
+	</bean>
+
+	<bean id="user1" class="com.bridgelabz.bean.User">
+		<property name="userId" value="1"></property>
+		<property name="userName" value="anil"></property>
+		<property name="email" value="anil@gmail.com"></property>
+	</bean>
+	<bean id="user2" class="com.bridgelabz.bean.User">
+		<property name="userId" value="2"></property>
+		<property name="userName" value="harsahal"></property>
+		<property name="email" value="harshal@gmail.com"></property>
+	</bean>
+
+	<bean id="q" class="com.bridgelabz.bean.Question">
+		<property name="qid" value="1"></property>
+		<property name="question" value="What is Java?"></property>
+		<property name="answers">
+			<map>
+				<entry key-ref="answer1" value-ref="user1"></entry>
+				<entry key-ref="answer2" value-ref="user2"></entry>
+			</map>
+		</property>
+	</bean>
+</beans>

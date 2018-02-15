@@ -1,0 +1,19 @@
+package com.bridgelabz.bean;
+
+import com.bridgelabz.service.MessageService;
+
+public class MyApplication {
+  private MessageService messageService;
+
+public MessageService getMessageService() {
+	return messageService;
+}
+
+public void setMessageService(MessageService messageService) {
+	this.messageService = messageService;
+}
+public boolean processMessage(String msg, String rec){
+	//some magic like validation, logging etc
+	return this.sendMessage.sendMessage(msg, rec);
+}
+}

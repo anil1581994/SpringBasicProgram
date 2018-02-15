@@ -1,0 +1,6 @@
+package com.bridgelabz.bean;
+
+public class EmployeeDao {
+    
+	private JdbcTemplate jdbcTemplate;
+}

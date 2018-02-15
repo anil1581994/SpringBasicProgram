@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:context="http://www.springframework.org/schema/context" xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+        http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd">
+        
+      <bean id="questionBean" class="com.bridgelabz.bean.Question">
+      <property name="id" value="1"></property>
+       <property name="name" value="what is framework.?"></property>
+        <property name="answers">
+        <list>
+        <value>it is abstraction layer on existence technologies</value>
+         <value>it is semifinished final project</value>
+         <value>it is predefined library for java technologies</value>
+        </list>
+        </property>
+      </bean>    
+</beans>

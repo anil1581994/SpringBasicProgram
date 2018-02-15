@@ -1,0 +1,13 @@
+package com.bridgelabz.controller;
+
+import org.springframework.stereotype.Controller;
+import org.springframework.web.servlet.ModelAndView;
+@Controller
+public class HelloWorldController {
+	@RequestMapping("/hello")
+  public ModelAndView helloWorld()
+  {
+	  String msg="welcome to Spring first application";
+	  return new ModelAndView("welcome","welcomeMessage",msg);
+  }
+}

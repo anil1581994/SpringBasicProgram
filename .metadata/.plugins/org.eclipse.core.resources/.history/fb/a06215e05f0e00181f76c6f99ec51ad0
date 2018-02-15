@@ -1,0 +1,21 @@
+package com.bridgelabz.cfg;
+
+import java.util.Date;
+
+public class Answer {
+private int answerId;
+private String answer;
+private Date postDate;
+public Answer(int answerId, String answer, Date postDate) {
+	super();
+	this.answerId = answerId;
+	this.answer = answer;
+	this.postDate = postDate;
+}
+@Override
+public String toString() {
+	return "Answer [answerId=" + answerId + ", answer=" + answer + ", postDate=" + postDate + "]";
+}
+
+
+}

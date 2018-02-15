@@ -1,0 +1,13 @@
+package com.bridgelabz.client;
+
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.support.ClassPathXmlApplicationContext;
+
+import com.bridgelabz.bean.Question;
+
+public class Test {
+ApplicationContext context=new ClassPathXmlApplicationContext("springConfig.xml");
+Question question=(Question)context.getBean("q");
+question.
+
+}

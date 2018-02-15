@@ -1,0 +1,21 @@
+package com.bridgelabz.bean;
+
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.support.ClassPathXmlApplicationContext;
+
+public class Test {
+public static void main(String[] args) {
+	ApplicationContext context=new ClassPathXmlApplicationContext("ApplicationContext.xml");
+	EmployeeDao empDao=(EmployeeDao)context.getBean("empDao");
+	Employee e=new Employee();
+	/*e.setName("sohail");
+	e.setId(13);
+	e.setSalary(8500);
+	int status=empDao.saveEmployee(e);  
+    System.out.println(status+"-->Record inserted successfully");*/  
+   e.setId(13); 
+    int status1=empDao.deleteEmployee(e); 
+    System.out.println(status1+"-->reocrd deleted successfully"); 
+      
+}
+}
